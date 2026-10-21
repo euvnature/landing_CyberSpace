@@ -192,25 +192,27 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 22px;
-  padding: 15px 0;
+  gap: 28px;
+  width: 100%;
+  max-width: none;
+  padding: 18px 32px;
 }
 
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .logo__mark {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 11px;
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: 16px;
+  font-size: 18px;
   color: #04120c;
   background: linear-gradient(135deg, var(--green), var(--cyan));
   box-shadow: 0 0 22px rgba(41, 216, 255, 0.4);
@@ -219,7 +221,7 @@ ul {
 .logo__text {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 20px;
+  font-size: 23px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -232,17 +234,22 @@ ul {
 .nav {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 32px;
 }
 
 .nav__link {
   position: relative;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
   transition: color 0.2s ease;
+}
+
+.header__cta {
+  padding: 13px 26px;
+  font-size: 15px;
 }
 
 .nav__link::after {

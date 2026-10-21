@@ -1,13 +1,421 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cyberspace</title>
+    <meta
+      name="description"
+      content="CyberSpace — кіберспортивний клуб у Львові (вул. Шпитальна, 11): потужне залізо, монітори 240 Гц, зони Standard, PRO та VIP. Бронюй місце онлайн."
+    />
+    <meta name="theme-color" content="#0f1016" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="CyberSpace — кіберспортивний клуб" />
+    <meta
+      property="og:description"
+      content="Потужне залізо, монітори 240 Гц та три ігрові зони у самому центрі Львова. Бронюй місце онлайн."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="uk_UA" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>CyberSpace — кіберспортивний клуб | Львів, вул. Шпитальна, 11</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#home" aria-label="CyberSpace — на головну">
+          <span class="logo__mark">CS</span>
+          <span class="logo__text">Cyber<span class="logo__accent">Space</span></span>
+        </a>
+
+        <nav class="nav" id="site-nav" aria-label="Основна навігація">
+          <a class="nav__link" href="#about">Про клуб</a>
+          <a class="nav__link" href="#pricing">Тарифи</a>
+          <a class="nav__link" href="#map">Карта місць</a>
+          <a class="nav__link" href="#contacts">Контакти</a>
+        </nav>
+
+        <a class="btn btn--primary header__cta" href="#map">Забронювати місце</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Відкрити меню"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <span class="hero__badge">Кіберспортивний клуб · Львів · 24/7</span>
+
+          <h1 class="hero__title">
+            <span class="hero__title-line">Грай на</span>
+            <span class="hero__title-accent">максимальному</span>
+            <span class="hero__title-line">рівні</span>
+          </h1>
+
+          <p class="hero__text">
+            Потужне залізо, монітори 240 Гц та атмосфера справжнього кіберспорту. Обирай зону,
+            бронюй місце — і вперед, до перемог.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#map">Обрати місце</a>
+            <a class="btn btn--ghost btn--lg" href="#pricing">Переглянути тарифи</a>
+          </div>
+
+          <ul class="hero__stats">
+            <li class="hero__stat">
+              <strong>120+</strong>
+              <span>комп'ютерів</span>
+            </li>
+            <li class="hero__stat">
+              <strong>240 Гц</strong>
+              <span>монітори</span>
+            </li>
+            <li class="hero__stat">
+              <strong>3 зони</strong>
+              <span>Standard · PRO · VIP</span>
+            </li>
+            <li class="hero__stat">
+              <strong>24/7</strong>
+              <span>без вихідних</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-head__eyebrow">Про клуб</span>
+            <h2 class="section-head__title">Чому обирають CyberSpace</h2>
+            <p class="section-head__subtitle">
+              Ми зібрали все необхідне для комфортного геймінгу — від топових комплектуючих до
+              зручної ергономіки.
+            </p>
+          </div>
+
+          <div class="about__grid">
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="6" y="6" width="12" height="12" rx="2" />
+                  <rect x="10" y="10" width="4" height="4" rx="1" />
+                  <path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" />
+                </svg>
+              </span>
+              <h3 class="feature__title">Потужне залізо</h3>
+              <p class="feature__text">
+                Апаратне оновлення кожні 12 місяців. Жодних просадок на максимальних налаштуваннях.
+              </p>
+            </article>
+
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="12" rx="2" />
+                  <path d="M8 20h8M12 16v4" />
+                </svg>
+              </span>
+              <h3 class="feature__title">Монітори 240 Гц</h3>
+              <p class="feature__text">
+                Плавність зображення, яка дає реальну перевагу в реакції та точності.
+              </p>
+            </article>
+
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 14v-2a8 8 0 0 1 16 0v2" />
+                  <rect x="2" y="13" width="4" height="6" rx="1.5" />
+                  <rect x="18" y="13" width="4" height="6" rx="1.5" />
+                  <path d="M20 19a4 4 0 0 1-4 3h-2" />
+                </svg>
+              </span>
+              <h3 class="feature__title">Ігрові девайси</h3>
+              <p class="feature__text">
+                Професійні навушники, миші та клавіатури вже включені у вартість.
+              </p>
+            </article>
+
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
+                </svg>
+              </span>
+              <h3 class="feature__title">Стабільний інтернет</h3>
+              <p class="feature__text">
+                Оптоволоконний канал з резервуванням. Пінг, який не підведе.
+              </p>
+            </article>
+
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 10V7a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3" />
+                  <path d="M3 12a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                </svg>
+              </span>
+              <h3 class="feature__title">Комфортні зони</h3>
+              <p class="feature__text">
+                Ергономічна розсадка та окремі кімнати для команд і стримерів.
+              </p>
+            </article>
+
+            <article class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 8h12v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" />
+                  <path d="M16 9h2a2 2 0 0 1 0 4h-2M7 4v2M11 4v2" />
+                </svg>
+              </span>
+              <h3 class="feature__title">Зона відпочинку</h3>
+              <p class="feature__text">
+                Кава, енергетики та снеки для відновлення між матчами.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-head__eyebrow">Тарифи</span>
+            <h2 class="section-head__title">Зони та ціни</h2>
+            <p class="section-head__subtitle">
+              Обирай рівень — оплата лише за фактично проведений час.
+            </p>
+          </div>
+
+          <div class="pricing__grid">
+            <article class="price-card price-card--green">
+              <div class="price-card__head">
+                <h3 class="price-card__name">Standard</h3>
+                <p class="price-card__price">
+                  <span class="price-card__amount">60</span>
+                  <span class="price-card__unit">грн / год</span>
+                </p>
+              </div>
+              <p class="price-card__tagline">Швидкий старт для будь-якої гри</p>
+              <ul class="price-card__features">
+                <li>RTX 4060</li>
+                <li>16 ГБ RAM</li>
+                <li>Монітор 144 Гц</li>
+                <li>Механічна клавіатура</li>
+              </ul>
+              <a class="btn btn--outline price-card__cta" href="#map" data-zone="standard">Обрати місце</a>
+            </article>
+
+            <article class="price-card price-card--cyan">
+              <div class="price-card__head">
+                <h3 class="price-card__name">PRO</h3>
+                <p class="price-card__price">
+                  <span class="price-card__amount">95</span>
+                  <span class="price-card__unit">грн / год</span>
+                </p>
+              </div>
+              <p class="price-card__tagline">Максимум FPS у кіберспортивних дисциплінах</p>
+              <ul class="price-card__features">
+                <li>RTX 4070 Super</li>
+                <li>32 ГБ RAM</li>
+                <li>Монітор 240 Гц</li>
+                <li>Світлові девайси</li>
+              </ul>
+              <a class="btn btn--outline price-card__cta" href="#map" data-zone="pro">Обрати місце</a>
+            </article>
+
+            <article class="price-card price-card--purple price-card--featured">
+              <div class="price-card__head">
+                <h3 class="price-card__name">VIP</h3>
+                <p class="price-card__price">
+                  <span class="price-card__amount">150</span>
+                  <span class="price-card__unit">грн / год</span>
+                </p>
+              </div>
+              <p class="price-card__tagline">Приватна зона з преміум-комплектацією</p>
+              <ul class="price-card__features">
+                <li>RTX 4080</li>
+                <li>64 ГБ RAM</li>
+                <li>Монітор 360 Гц</li>
+                <li>Ігрове крісло + навушники</li>
+              </ul>
+              <a class="btn btn--outline price-card__cta" href="#map" data-zone="vip">Обрати місце</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="map" id="map">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-head__eyebrow">Карта клубу</span>
+            <h2 class="section-head__title">Інтерактивна карта місць</h2>
+            <p class="section-head__subtitle">
+              Натисни на вільне місце, щоб відкрити форму бронювання.
+            </p>
+          </div>
+
+          <div class="map__stats" id="map-stats" aria-live="polite"></div>
+
+          <ul class="map__legend">
+            <li class="map__legend-item">
+              <span class="map__legend-dot map__legend-dot--free"></span>Вільно
+            </li>
+            <li class="map__legend-item">
+              <span class="map__legend-dot map__legend-dot--occupied"></span>Зайнято
+            </li>
+            <li class="map__legend-item">
+              <span class="map__legend-dot map__legend-dot--selected"></span>Обрано
+            </li>
+          </ul>
+
+          <div class="map__zones" id="seat-map"></div>
+
+          <div class="bookings" id="bookings-panel"></div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container contacts__inner">
+          <div class="contacts__info">
+            <div class="section-head">
+              <span class="section-head__eyebrow">Контакти</span>
+              <h2 class="section-head__title">Як нас знайти</h2>
+            </div>
+
+            <address class="contacts__address">
+              <span class="contacts__address-line">м. Львів</span>
+              <span class="contacts__address-line">вул. Шпитальна, 11</span>
+            </address>
+          </div>
+
+          <div class="contacts__card">
+            <div class="contacts__row">
+              <span class="contacts__label">Телефон</span>
+              <a class="contacts__value" href="tel:+380671234567">+380 67 123 45 67</a>
+            </div>
+            <div class="contacts__row">
+              <span class="contacts__label">Telegram</span>
+              <a class="contacts__value" href="https://t.me/cyberspace_club" target="_blank" rel="noopener noreferrer">
+                @cyberspace_club
+              </a>
+            </div>
+            <div class="contacts__row">
+              <span class="contacts__label">Графік</span>
+              <span class="contacts__value">Цілодобово, без вихідних</span>
+            </div>
+            <div class="contacts__row">
+              <span class="contacts__label">Площа</span>
+              <span class="contacts__value">240 м² · 120+ робочих місць</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">Cyber<span>Space</span></span>
+          <p class="footer__tagline">Кіберспортивний клуб нового покоління.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Навігація у підвалі">
+          <a href="#about">Про клуб</a>
+          <a href="#pricing">Тарифи</a>
+          <a href="#map">Карта місць</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
+
+        <p class="footer__copy">© 2026 CyberSpace. Усі права захищено.</p>
+      </div>
+    </footer>
+
+    <div class="modal" id="booking-modal" aria-hidden="true">
+      <div class="modal__backdrop" data-close></div>
+
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal__close" type="button" data-close aria-label="Закрити">×</button>
+
+        <h3 class="modal__title" id="modal-title">Бронювання місця</h3>
+
+        <div class="modal__seat" id="modal-seat"></div>
+
+        <form class="form" id="booking-form" novalidate>
+          <div class="form__field">
+            <label class="form__label" for="name">Ім'я</label>
+            <input
+              class="form__input"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Як до вас звертатися"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="phone">Телефон</label>
+            <input
+              class="form__input"
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="+380 67 000 00 00"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="hours">Кількість годин</label>
+            <div class="form__hours">
+              <button class="form__hours-btn" type="button" data-hours="-1" aria-label="Зменшити години">−</button>
+              <input
+                class="form__input form__input--hours"
+                id="hours"
+                name="hours"
+                type="number"
+                min="1"
+                max="12"
+                value="2"
+                inputmode="numeric"
+              />
+              <button class="form__hours-btn" type="button" data-hours="1" aria-label="Збільшити години">+</button>
+            </div>
+          </div>
+
+          <div class="form__errors" id="form-errors"></div>
+
+          <div class="form__total">
+            <span class="form__total-label">До сплати:</span>
+            <strong class="form__total-value" id="price-value">0 грн</strong>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit">Підтвердити бронювання</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

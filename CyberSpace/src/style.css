@@ -1081,23 +1081,82 @@ a.contacts__value:hover {
   filter: invert(1) hue-rotate(180deg) brightness(0.92) contrast(0.9) saturate(1.15);
 }
 
+.map-widget__actions {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  background: rgba(13, 14, 21, 0.9);
+}
+
 .map-widget__link {
-  display: block;
-  padding: 13px 18px;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
   text-align: center;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--cyan);
-  background: rgba(13, 14, 21, 0.9);
-  border-top: 1px solid var(--border);
-  transition: background 0.2s ease, color 0.2s ease;
+  color: var(--text-strong);
+  background: rgba(23, 26, 36, 0.7);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.25s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .map-widget__link:hover {
-  background: rgba(41, 216, 255, 0.1);
-  color: var(--text-strong);
+  transform: translateY(-2px);
+  border-color: var(--cyan);
+  box-shadow: 0 0 20px rgba(41, 216, 255, 0.3);
+}
+
+.map-widget__link--primary {
+  color: #04120c;
+  background: linear-gradient(135deg, var(--green), var(--cyan));
+  border-color: transparent;
+  box-shadow: 0 0 22px rgba(41, 216, 255, 0.35);
+}
+
+.map-widget__link--primary:hover {
+  color: #04120c;
+  box-shadow: 0 0 34px rgba(41, 216, 255, 0.6);
+}
+
+/* ---------- Clickable address ---------- */
+
+.contacts__address-link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.2s ease;
+}
+
+.contacts__address-link:hover .contacts__address-line {
+  text-shadow: 0 0 18px rgba(41, 216, 255, 0.55);
+}
+
+.contacts__address-hint {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  opacity: 0.85;
+  transition: opacity 0.2s ease, text-shadow 0.2s ease;
+}
+
+.contacts__address-link:hover .contacts__address-hint {
+  opacity: 1;
+  text-shadow: 0 0 14px rgba(41, 216, 255, 0.7);
 }
 
 /* ---------- Footer ---------- */
@@ -1598,6 +1657,14 @@ a.contacts__value:hover {
 
   .map-widget__frame {
     height: 300px;
+  }
+
+  .map-widget__actions {
+    flex-direction: column;
+  }
+
+  .map-widget__link {
+    width: 100%;
   }
 
   .toast {

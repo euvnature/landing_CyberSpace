@@ -302,8 +302,16 @@
             </div>
 
             <address class="contacts__address">
-              <span class="contacts__address-line">м. Львів</span>
-              <span class="contacts__address-line">вул. Шпитальна, 11 (3-й поверх)</span>
+              <a
+                class="contacts__address-link"
+                href="https://www.google.com/maps/search/?api=1&query=Shpytalna+St+11,+Lviv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contacts__address-line">м. Львів</span>
+                <span class="contacts__address-line">вул. Шпитальна, 11 (3-й поверх)</span>
+                <span class="contacts__address-hint">Відкрити в картах ↗</span>
+              </a>
             </address>
           </div>
 
@@ -336,14 +344,16 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <a
-              class="map-widget__link"
-              href="https://www.openstreetmap.org/?mlat=49.84455&mlon=24.02279#map=17/49.84455/24.02279"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Відкрити в повній карті →
-            </a>
+            <div class="map-widget__actions">
+              <a
+                class="map-widget__link map-widget__link--primary"
+                href="https://www.google.com/maps/search/?api=1&query=Shpytalna+St+11,+Lviv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Відкрити в картах
+              </a>
+            </div>
           </div>
         </div>
       </section>

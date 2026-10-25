@@ -1,0 +1,38 @@
+{
+  "name": "landing-cyberspace-backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload",
+    "migrate:create": "npm run payload -- migrate:create",
+    "migrate": "npm run payload -- migrate",
+    "migrate:status": "npm run payload -- migrate:status",
+    "generate:types": "npm run payload -- generate:types",
+    "generate:importmap": "npm run payload -- generate:importmap"
+  },
+  "dependencies": {
+    "@payloadcms/db-postgres": "3.92.0",
+    "@payloadcms/next": "3.92.0",
+    "@payloadcms/richtext-lexical": "3.92.0",
+    "@payloadcms/ui": "3.92.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^16.4.7",
+    "next": "15.4.11",
+    "payload": "3.92.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": "^22.23.4 || >=24.22.1"
+  }
+}

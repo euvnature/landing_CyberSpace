@@ -60,7 +60,7 @@ export const endpoints: Endpoint[] = [
     path: '/page',
     method: 'get',
     handler: async (req) => {
-      const pagePath = normalizePath(new URL(req.url).searchParams.get('path') ?? '')
+      const pagePath = normalizePath(new URL(req.url ?? '', 'http://localhost').searchParams.get('path') ?? '')
       if (!pagePath) {
         return Response.json(
           { error: 'A non-empty path query parameter is required' },

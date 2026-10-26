@@ -8,7 +8,7 @@ CyberSpace — вебзастосунок, у якому клієнтська ч
 
 ## 🛠️ Технології
 
-- **Frontend:** Next.js, React, TypeScript
+- **Frontend:** Next.js, TypeScript
 - **Backend:** Next.js, Payload CMS, TypeScript
 - **API:** Payload REST API
 - **Пакетний менеджер:** npm
